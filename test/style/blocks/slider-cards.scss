@@ -1,0 +1,130 @@
+.slider-cards {
+  background: var(--bg-second);
+
+  .slider {
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--bg-primary);
+    box-shadow: 0 0 20px 0 var(--bg-tertiary);
+
+    &__navigation {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .pagination-slider {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex: 1;
+
+      &__counter {
+        display: block;
+        font-size: 14px;
+        line-height: 145%;
+        position: relative;
+        color: var(--color-accent);
+      }
+
+      &__progress {
+        background: var(--bg-tertiary);
+        border-radius: 9px;
+        flex: 1;
+        width: auto;
+        position: relative;
+
+        .swiper-pagination-progressbar-fill {
+          background: var(--color-accent);
+          border-radius: 9px 0 0 9px;
+        }
+      }
+    }
+
+    .control-slider {
+      display: flex;
+      gap: 10px;
+
+      &__button {
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 0px;
+        background: var(--bg-tertiary);
+        color: var(--bg-tertiary);
+        position: static;
+        margin: 0;
+        inset: auto;
+        opacity: 1;
+
+        svg {
+          width: 7px;
+          height: 12px;
+          fill: none;
+          color: var(--bg-primary);
+
+          path {
+            fill: none;
+            stroke: currentColor;
+          }
+        }
+      }
+    }
+
+    &__wrapper {
+      margin-top: 20px;
+    }
+
+    .elem-slider {
+      border: 20px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      background: var(--bg-second);
+      border-radius: 20px;
+      min-height: 250px;
+
+      @include phones-full {
+        text-align: center;
+      }
+
+      &__icon {
+        max-width: 80px;
+        margin-bottom: 20px;
+
+        @include phones-full {
+         margin: 0 auto;
+         margin-bottom: 20px;
+        }
+      }
+
+      &__content {
+        margin-top: auto;
+      }
+
+      &__title {
+        font-size: 18px;
+        line-height: 130%;
+        color: var(--color-primary);
+        margin-bottom: 10px;
+      }
+
+      &__text {
+        font-size: 14px;
+        line-height: 145%;
+        color: var(--color-primary-muted);
+      }
+    }
+  }
+}
+
+[data-theme='dark'] {
+  .slider {
+    box-shadow: none;
+  }
+}
+

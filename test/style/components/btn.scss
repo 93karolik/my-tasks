@@ -1,0 +1,48 @@
+.btn {
+  border-radius: 8px;
+  transition: .3s ease;
+  border: none;
+  padding: 0px;
+  transition: .3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &--theme-switch {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-second);
+    color: var(--color-primary);
+
+    @include phones-full {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--primary {
+    padding: 14px 24px;
+    color: var(--color-base);
+    background: var(--color-accent);
+    line-height: 145%;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+
+
+    @include tablets-full {
+      width: 48px;
+      height: 48px;
+      color: transparent;
+      font-size: 0;
+      text-indent: -9999px;
+      background: var(--color-accent) url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3QgeD0iMS42NjY1IiB5PSIzLjMzMjAzIiB3aWR0aD0iMTYuNjY2NyIgaGVpZ2h0PSIxMy4zMzMzIiByeD0iMy4zMzMzMyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjMzMzMzIi8+CjxwYXRoIGQ9Ik01IDcuNDk4MDVMOSAxMC40OThDOS41OTI1OSAxMC45NDI1IDEwLjQwNzQgMTAuOTQyNSAxMSAxMC40OThMMTUgNy40OTgwNSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjMzMzMzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==") center center no-repeat;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.header {
+  padding: 20px 0px;
+  border-radius: 16px;
+  background: var(--bg-primary);
+
+  &__inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablets-full {
+      flex-wrap: wrap;
+      justify-content: normal;
+    }
+  }
+
+  &__logo {
+    @include tablets-full {
+      order: 1;
+      margin-right: auto;
+    }
+  }
+
+  &__nav {
+    @include tablets-full {
+      display: none;
+      background: var(--bg-primary);
+      border-radius: 16px;
+    }
+
+    &--is-open {
+      @include tablets-full {
+        display: block;
+        order: 10;
+        width: 100%;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    @include tablets-full {
+      order: 2;
+    }
+  }
+
+  &__burger {
+    padding: 14px;
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 145%;
+    border: none;
+    background: var(--bg-second);
+    color: var(--color-primary);
+    border-radius: 8px;
+    transition: .3s ease;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    @include tablets-full {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    @include phones-full {
+      display: block;
+      font-size: 0px;
+      order: 3;
+    }
+
+    .burger {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        display: block;
+        width: 16px;
+        height: 2px;
+        margin-bottom: 4px;
+        border-radius: 999px;
+        background: var(--color-primary);
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    &--is-open {
+      .burger {
+        span {
+          position: absolute;
+
+          &:nth-child(1) {
+            top: 10px;
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            top: 10px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+[data-theme='dark'] {
+  .header {
+    &__logo-image {
+      &--light {
+        display: block;
+      }
+
+      &--dark {
+        display: none;
+      }
+    }
+  }
+}
+
+[data-theme='light'] {
+  .header {
+    &__logo-image {
+      &--dark {
+        display: block;
+      }
+
+      &--light {
+        display: none;
+      }
+    }
+  }
+}

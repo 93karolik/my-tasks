@@ -1,0 +1,49 @@
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 28px;
+  margin: 0px;
+  padding-left: 0px;
+
+  @include tablets-full {
+    display: block;
+  }
+
+  &__item {
+
+    a {
+      color: var(--color-primary);
+      font-size: 14px;
+      line-height: 145%;
+      display: inline-block;
+      text-align: center;
+      transition: .3s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      @include tablets-full {
+        border-bottom: 1px solid var(--bg-second);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+      }
+    }
+
+    &--active {
+      a {
+        color: var(--color-accent);
+      }
+    }
+
+    &:last-child {
+      a {
+        @include tablets-full {
+          border-bottom: 0px;
+        }
+      }
+    }
+  }
+}

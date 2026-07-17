@@ -1,0 +1,82 @@
+.hero {
+  overflow: hidden;
+  background: var(--color-accent);
+  min-height: 462px;
+
+  @include phones-full {
+    min-height: auto;
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+  }
+
+  &__inner {
+    padding-top: 98px;
+    padding-bottom: 98px;
+    flex: 1;
+    display: flex;
+    position: relative;
+
+    @include tablets-full {
+      padding-top: 74px;
+      padding-bottom: 74px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    pointer-events: none;
+    width: 360px;
+    will-change: transform;
+    z-index:2;
+
+    @include laptop {
+       width: 284px;
+    }
+
+    @include tablets-full {
+      width: 200px;
+    }
+
+    @include phones-full {
+     display: none;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &--left {
+      left: -20px;
+      bottom: -100px;
+
+      @include laptop {
+        left: -60px;
+        bottom: -80px;
+      }
+
+      @include tablets-full {
+        bottom: -50px;
+      }
+    }
+
+    &--right {
+      right: -20px;
+      bottom: -100px;
+
+      @include laptop {
+        right: -60px;
+        bottom: -80px;
+      }
+
+      @include tablets-full {
+        bottom: -50px;
+      }
+    }
+  }
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="dist/css/style.min.css">
+</head>
+<body data-theme="light">
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <div class="container">
+                    <div class="header__inner">
+                        <button class="header__burger"
+                                type="button"
+                                aria-label="Open menu"
+                                aria-expanded="false"
+                                aria-controls="main-menu">
+                            <div class="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            menu
+                        </button>
+                        <a class="header__logo" href="/">
+                            <img
+                                class="header__logo-image header__logo-image--light"
+                                src="images/header-logo-light.svg"
+                                alt="Header Logo">
+                            <img
+                                class="header__logo-image header__logo-image--dark"
+                                src="images/header-logo-dark.svg"
+                                alt="Header Logo">
+                        </a>
+                        <nav class="header__nav">
+                            <ul class="menu menu--header">
+                                <li class="menu__item">
+                                    <a href="#">Menu item</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Menu item</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Menu item</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Menu item</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Menu item</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__actions">
+                            <button class="btn btn--theme-switch" type="button" aria-label="Switch theme">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="10" cy="10" r="7.5" transform="rotate(-180 10 10)" stroke="currentColor" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10 2.5C10.9849 2.5 11.9602 2.694 12.8701 3.07091C13.7801 3.44782 14.6069 4.00026 15.3033 4.6967C15.9997 5.39314 16.5522 6.21994 16.9291 7.12988C17.306 8.03982 17.5 9.01509 17.5 10C17.5 10.9849 17.306 11.9602 16.9291 12.8701C16.5522 13.7801 15.9997 14.6069 15.3033 15.3033C14.6069 15.9997 13.7801 16.5522 12.8701 16.9291C11.9602 17.306 10.9849 17.5 10 17.5L10 10L10 2.5Z" fill="currentColor"/>
+                                </svg>
+                            </button>
+                            <a class="btn btn--primary" href="#">Contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="hero__inner">
+                <div class="hero__decor hero__decor--left js-parallax">
+                    <img src="images/left-decor.svg" alt="" aria-hidden="true">
+                </div>
+                <div class="hero__content content content--white">
+                    <h1>Heading h1</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's
+                        standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+                <div class="hero__decor hero__decor--right js-parallax">
+                    <img src="images/right-decor.svg" alt="" aria-hidden="true">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="container">
+            <div class="cards__list">
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                    </div>
+                    <div class="card__title">
+                        Telegram Channel
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                        <div class="card__tag">name tag</div>
+                    </div>
+                    <div class="card__title">
+                        User Name
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                        <div class="card__tag">name tag</div>
+                    </div>
+                    <div class="card__title">
+                        User Name
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                    </div>
+                    <div class="card__title">
+                        Slack Channel
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__icon">
+                        <img src="images/icon-slack.svg" alt="Slack">
+                    </div>
+                    <div class="card__title">
+                        Slack Channel
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                        <div class="card__tag">name tag</div>
+                    </div>
+                    <div class="card__title">
+                        User Name
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                        <div class="card__tag">name tag</div>
+                    </div>
+                    <div class="card__title">
+                        User Name
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card__inner">
+                        <div class="card__icon">
+                            <img src="images/icon-tg.svg" alt="Telegram">
+                        </div>
+                        <div class="card__tag">name tag</div>
+                    </div>
+                    <div class="card__title">
+                        User Name
+                        <div class="card__arrow">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.341 10.83L13.6493 10.83L9.58267 14.8967C9.25767 15.2217 9.25767 15.755 9.58267 16.08C9.65977 16.1573 9.75134 16.2186 9.85215 16.2604C9.95296 16.3022 10.061 16.3237 10.1702 16.3237C10.2793 16.3237 10.3874 16.3022 10.4882 16.2604C10.589 16.2186 10.6806 16.1573 10.7577 16.08L16.2493 10.5884C16.3266 10.5113 16.3879 10.4197 16.4297 10.3189C16.4715 10.2181 16.493 10.11 16.493 10.0009C16.493 9.89172 16.4715 9.78365 16.4297 9.68284C16.3879 9.58203 16.3266 9.49045 16.2493 9.41336L10.7577 3.92169C10.6805 3.84454 10.5889 3.78334 10.4881 3.74159C10.3873 3.69983 10.2793 3.67834 10.1702 3.67834C10.0611 3.67834 9.95302 3.69983 9.85222 3.74159C9.75142 3.78334 9.65982 3.84454 9.58267 3.92169C9.50552 3.99884 9.44432 4.09044 9.40257 4.19124C9.36081 4.29204 9.33932 4.40008 9.33932 4.50919C9.33932 4.6183 9.36081 4.72634 9.40257 4.82715C9.44432 4.92795 9.50552 5.01954 9.58267 5.09669L13.6493 9.16336L4.341 9.16336C3.88267 9.16336 3.50767 9.53836 3.50767 9.99669C3.50767 10.455 3.88267 10.83 4.341 10.83Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="slider-cards">
+        <div class="container">
+            <div class="slider-cards__content content">
+                <h2>Heading h2</h2>
+                <p>
+                    Our platform is compliant with many popular iGaming jurisdictions and regulators. We can also integrate with national
+                </p>
+            </div>
+            <div class="slider">
+                <div class="slider__swipper swiper mySwiper">
+                    <div class="slider__navigation">
+                        <div class="slider__pagination pagination-slider" aria-live="polite">
+                            <span class="pagination-slider__counter pagination-slider__counter--current">1</span>
+                            <div class="pagination-slider__progress swiper-pagination"></div>
+                            <span class="pagination-slider__counter pagination-slider__counter--total">9</span>
+                        </div>
+                        <div class="slider__control control-slider">
+                            <button class="control-slider__button control-slider__button--left swiper-button-prev" type="button" aria-label="Previous slide">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 1L0.999999 6L6 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="control-slider__button control-slider__button--right swiper-button-next" type="button" aria-label="Next slide">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 11L6 6L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="slider__wrapper swiper-wrapper">
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-peru.svg" alt="Peru">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-spain.svg" alt="Spain">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-brazil.svg" alt="Brazil">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-mexico.svg" alt="Mexico">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-greece.svg" alt="Greece">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-romania.svg" alt="Romania">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__elem elem-slider swiper-slide">
+                            <div class="elem-slider__icon">
+                                <img src="images/icon-serbia.svg" alt="Serbia">
+                            </div>
+                            <div class="elem-slider__content">
+                                <div class="elem-slider__title">
+                                    Country name
+                                </div>
+                                <div class="elem-slider__text">
+                                    Technology partners lorem Ipsum is simply dummy text of the
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
+</body>
+</html>

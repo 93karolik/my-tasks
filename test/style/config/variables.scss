@@ -1,0 +1,23 @@
+:root {
+  --color-base: #ffffff;
+  --color-base-revert: #000;
+  --color-accent: #E30613;
+}
+
+[data-theme='light'] {
+  --bg-primary: #ffffff;
+  --bg-second: rgba(29, 29, 27, 0.05);
+  --bg-tertiary: rgba(29, 29, 27, 0.10);
+
+  --color-primary: #1D1D1B;
+  --color-primary-muted: rgba(29, 29, 27, 0.80);
+}
+
+[data-theme='dark'] {
+  --bg-primary: #1D1D1B;
+  --bg-second: rgba(255, 255, 225, 0.10);
+  --bg-tertiary: rgba(255, 255, 255, 0.20);
+
+  --color-primary: #ffffff;
+  --color-primary-muted: rgba(255, 255, 255, 0.80);
+}
